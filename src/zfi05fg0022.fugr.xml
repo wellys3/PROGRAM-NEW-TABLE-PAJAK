@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG New Table Bukti Potong</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFI05FG0022TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFI05FG0022</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZROUND_AMOUNT_THOUSAND</FUNCNAME>
+     <SHORT_TEXT>Function to Round Up and Down</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_SIGN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_INPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TOTAL_AMOUNT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TOTAL_AMOUNT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_SIGN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Total amount in document currency</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Total amount in document currency</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZROUND_DECIMAL</FUNCNAME>
+     <SHORT_TEXT>Function to Round Up and Down</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_METHOD_ROUNDING</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZFIDE01213</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DECIMAL</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_INPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TOTAL_AMOUNT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TOTAL_AMOUNT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_METHOD_ROUNDING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Method Rounding</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DECIMAL</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Total amount in document currency</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Total amount in document currency</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
